@@ -1,5 +1,4 @@
-venv
+.idea/
+audio_cache/
+
 *.pyc
-staticfiles
-.env
-db.sqlite3

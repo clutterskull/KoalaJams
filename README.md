@@ -1,44 +1,28 @@
-# python-getting-started
+# MusicBot
 
-A barebones Python app, which can easily be deployed to Heroku.
+MusicBot is a Discord music bot written in [Python](https://www.python.org "Python homepage"). It plays requested songs and if the queue becomes empty it will play through a list of existing songs.
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+### How do I set it up?
 
-## Running Locally
+- [Windows Tutorial](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Windows-7-and-up "Windows instructions")
+- [Linux Tutorial](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions "Linux instructions")
+- OSX Tutorial - coming soon, whenever someone decides to make one.
 
-Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
+### Commands
 
-```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
+Commands are listed [here](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list").
 
-$ pip install -r requirements.txt
+### Configuration
 
-$ createdb python_getting_started
+The main configuration file is `config/options.ini`, but is not included.  Simply make a copy of `example_options.ini` and rename to `options.ini`.  See `example_options.ini` for more information on how to configure it.
 
-$ python manage.py migrate
-$ python manage.py collectstatic
+### Great, now how do I use it?
+Download the bot, set the dependencies up, then run `runbot.bat`! (or `run.sh` on mac/linux)  Read the tutorial if you don't know what to do.
 
-$ heroku local
-```
+If you have any errors, read the FAQ. If that didn't help, you can ask for assistance on the discord help server. Is is recommended to take screenshots so the developers can see errors.
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+[Rhino Help Server](http://discord.me/rhinohelp "Discord link")
 
-## Deploying to Heroku
+### FAQ
 
-```sh
-$ heroku create
-$ git push heroku master
-
-$ heroku run python manage.py migrate
-$ heroku open
-```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Python on Heroku, see these Dev Center articles:
-
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+Some frequently asked questions are listed on the wiki [here](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ "Wiki").
